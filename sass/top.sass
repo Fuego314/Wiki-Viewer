@@ -1,0 +1,95 @@
+.top-holder
+	position: relative
+	left: 0
+	right: 0
+	width: 100%
+	padding: 0 1em
+	.logo
+		width: 8em
+		margin-top: 2.5em
+		@media(min-width: 768px)
+			width: 9.5em
+			margin-top: 3.25em
+	.wiki-header
+		margin: .35em 0 .67em 0
+		@media(min-width: 768px)
+			margin: .25em 0 .45em 0
+	#search
+		position: relative
+		display: inline-flex
+		right: .125em
+		div
+			position: relative
+			display: flex
+			align-items: center
+		#wiki-search
+			width: 10.625em
+			height: 2.475em
+			padding: 0 2.6em 0 1.1em
+			border: none
+			border-radius: 1.2em
+			@media(min-width: 470px)
+				width: 13.750em
+			@media(min-width: 768px)
+				width: 18.125em
+		#search-btn,
+		#random-btn
+			background: #337ab7
+			border-radius: 50%
+			&:hover
+				background: #286090
+			&:active
+				background: #1d4e78
+		#search-btn
+			position: absolute
+			width: 2.2em
+			height: 2.2em
+			top: .13em
+			right: .125em
+			cursor: pointer
+			@media(min-width: 470px)
+				top: 0.1275em
+		#random-btn
+			position: relative
+			width: 2.475em
+			height: 2.475em
+			left: .438em
+			padding-top: 0.68em
+			padding-left: .1em
+		.rndm-btn-svg
+			width: 1.3em
+		.srch-btn-svg
+			width: 1.2em
+			margin: 0 auto .063em
+	.no-input
+		p
+			margin-top: .8em
+			margin-bottom: 0
+			&:nth-child(2)
+				margin-top: .6em
+
+// Changing classes
+#top.top-lg
+	@media(min-width: 1024px)
+		position: absolute
+		animation: top-right .3s ease-in-out forwards
+
+#top.info-height
+	height: 23.750em
+	@media(min-width: 347px)
+		height: 21.250em
+	@media(min-width: 470px)
+		height: 23em
+	@media(min-width: 768px)
+		height: 26.563em
+
+#top
+	@media(min-width: 1024px)
+		.img-lg
+			width: 7em
+		.h1-lg
+			font-size: 2rem
+		.wiki-header .h1-span-lg
+			font-size: 3rem
+		#search .search-bar-lg
+			width: 11.250em

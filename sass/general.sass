@@ -1,0 +1,26 @@
+::root
+  font-size: 16px
+
+*, *::after, *::before
+  box-sizing: border-box
+
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.container
+  min-height: 100vh
+  background: #ddd url('https://goo.gl/dBh7DB')
+  @media(min-width: 1024px)
+    display: flex
+    justify-content: flex-end
+
+.hidden
+  opacity: 0
+
+#top, img, h1, h1 span,
+#wiki-search, #search-btn,
+#random-btn, .no-input,
+#results-holder, #results,
+.entries
+  transition: all .3s
